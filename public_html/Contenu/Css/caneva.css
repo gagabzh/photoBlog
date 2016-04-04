@@ -1,0 +1,151 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 avr. 2016, 18:42:15
+    Author     : gaga
+*/
+*
+{
+    font-size: medium;
+    font-style: normal;
+    font-family: Times New Roman, Arial, Verdana, sans-serif;
+    color:black;
+}
+body
+{
+    background-color: #B3B8BA;
+    text-align: justify;
+}
+header, footer
+{
+    text-align: center;
+    width: 100%;
+    height: 10%
+}
+#maintitle
+{
+    font-size: xx-large;
+    text-align: center;
+    color: #0E87B0;
+    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+.conteneur
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav
+{
+    width: 10%;
+    min-width: 100px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left : 5px;
+    margin-right: 10px;
+}
+nav a,nav a:visited
+{
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0px black;
+    padding: 6px;
+    color: black;
+    background-color: gray;
+}
+nav a:hover,nav a:focus
+{
+    color: black;
+    background-color: whitesmoke;
+}
+
+section
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row
+}
+aside
+{
+    width: 20%;
+    min-width: 200px;
+    max-height: 30%;
+    margin-left : 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+aside table, aside iframe
+{
+    border: 1px solid black;
+    padding: 6px;
+    min-height: 200px;
+    min-height: 200px;
+}
+aside table img
+{
+    width: 40px;
+    height: 40px;
+}
+.aside, .articles
+{
+    display: flex;
+    flex-direction: column
+}
+.journal article
+{
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0px black;
+    padding: 6px;
+    background-color: beige;
+    margin-top : 5px;
+    margin-bottom: 10px;
+    height: auto;
+}
+.journal article[class="hidden"]
+{
+   height: 50px;
+}
+.cachable
+{
+    height: auto;
+    visibility: hidden;
+    
+}
+.button
+{
+    text-align: right;
+}
+@media screen and (max-width: 500px)
+{
+    .conteneur
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    nav
+    {
+        width: 100%;
+        min-width: 200px;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top : 5px;
+        margin-bottom: 10px;
+    }
+    
+    section
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse
+    }
+}

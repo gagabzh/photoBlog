@@ -3,39 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$(document).ready(function(){
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items:4,
-        merge:true,
-        loop:true,
-        margin:10,
-        video:true,
-        lazyLoad:true,
-        autoWidth:true,
-        URLhashListener:true,
-        autoplayHoverPause:true,
-        startPosition: '#Depart',
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            1000:{
-                items:4
-            }
-        }
-    });
-    owl.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY>0) {
-            owl.trigger('next.owl');
-        } else {
-            owl.trigger('prev.owl');
-        }
-        e.preventDefault();
+$(window).load(function() {
+    $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 210,
+        itemMargin: 5,
+        minItems: 1,
+        maxItems: 5
     });
 });
-
+function afficher_cache(id){
+    if(document.getElementById(id).style.visibility==="hidden")
+    {
+        document.getElementById(id).style.visibility="visible";
+        document.getElementById("A" + id).setAttribute("class","visible");
+        document.getElementById("B" + id).innerHTML="N";
+    }
+    else
+    {
+        document.getElementById(id).style.visibility="hidden";
+        document.getElementById("A" + id).setAttribute("class","hidden");
+        document.getElementById("B" + id).innerHTML="V";
+    }
+    return true;
+    
+}
