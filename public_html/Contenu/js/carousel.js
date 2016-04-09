@@ -18,13 +18,13 @@ function afficher_cache(id){
     {
         document.getElementById(id).style.visibility="visible";
         document.getElementById("A" + id).setAttribute("class","visible");
-        document.getElementById("B" + id).innerHTML="N";
+//        document.getElementById("B" + id).innerHTML="N";
     }
     else
     {
         document.getElementById(id).style.visibility="hidden";
         document.getElementById("A" + id).setAttribute("class","hidden");
-        document.getElementById("B" + id).innerHTML="V";
+//        document.getElementById("B" + id).innerHTML="V";
     }
     return true;
     

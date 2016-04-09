@@ -66,26 +66,30 @@ nav a:hover,nav a:focus
 
 section
 {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row
 }
 aside
 {
     width: 20%;
-    min-width: 200px;
+    /*min-width: 200px;*/
     max-height: 30%;
-    margin-left : 5px;
+    margin-left : 10px;
     margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 aside table, aside iframe
 {
-    border: 1px solid black;
     padding: 6px;
+    min-width: 200px;
     min-height: 200px;
-    min-height: 200px;
+    width: 200px;
+}
+aside table
+{
+    border: 1px solid black;
 }
 aside table img
 {
@@ -96,6 +100,10 @@ aside table img
 {
     display: flex;
     flex-direction: column
+}
+.articles
+{
+    width: 60%;
 }
 .journal article
 {
@@ -120,7 +128,8 @@ aside table img
 }
 .button
 {
-    text-align: right;
+    text-align: left;
+    cursor: pointer;
 }
 @media screen and (max-width: 500px)
 {
